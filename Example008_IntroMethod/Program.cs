@@ -1,0 +1,20 @@
+﻿int a1 = 15;
+int b1 = 21;
+int c1 = 39;
+int a2 = 12;
+int b2 = 23;
+int c2 = 33;
+int a3 = 13;
+int b3 = 23;
+int c3 = 33;
+int max = a1;
+
+if (max < b1) max = b1;
+if (max < c1) max = c1;
+if (max < a2) max = a2;
+if (max < b2) max = b2;
+if (max < c2) max = c2;
+if (max < a3) max = a3;
+if (max < b3) max = b3;
+if (max < c3) max = c3;
+Console.WriteLine(max);
