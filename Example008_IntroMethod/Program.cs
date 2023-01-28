@@ -1,4 +1,12 @@
-﻿int a1 = 15;
+﻿int Max(int arg1, int arg2, int arg3)
+{
+    int res = arg1;
+    if (res < arg2) res = arg2; 
+    if (res < arg3) res = arg3;
+    return res;
+}
+
+int a1 = 15;
 int b1 = 21;
 int c1 = 39;
 int a2 = 12;
@@ -7,14 +15,15 @@ int c2 = 33;
 int a3 = 13;
 int b3 = 23;
 int c3 = 33;
-int max = a1;
 
-if (max < b1) max = b1;
-if (max < c1) max = c1;
-if (max < a2) max = a2;
-if (max < b2) max = b2;
-if (max < c2) max = c2;
-if (max < a3) max = a3;
-if (max < b3) max = b3;
-if (max < c3) max = c3;
+// int max1 = Max(a1, b1, c1);
+// int max2 = Max(a2, b2, c2);
+// int max3 = Max(a3, b3, c3);
+// int max = Max(max1, max2, max3);
+
+int max = Max(
+    Max(a1, b1, c1), 
+    Max(a2, b2, c2), 
+    Max(a3, b3, c3));
+
 Console.WriteLine(max);
