@@ -1,4 +1,5 @@
-﻿void FillArray(int[] collection)
+﻿// Функция заполняющая массив случайными значениями
+void FillArray(int[] collection)
 {
     int length = collection.Length;
     int index = 0;
@@ -10,6 +11,7 @@
     }
 }
 
+// Функция распечатывающая значения массива
 void PrintArray(int[] col)
 {
     int size = col.Length;
@@ -22,6 +24,7 @@ void PrintArray(int[] col)
     }
 }
 
+// Функция возвращающая индекс в массиве для искомого значения
 int IndexOf(int[] collection, int find)
 {
     int len = collection.Length;
@@ -41,7 +44,7 @@ int IndexOf(int[] collection, int find)
     return place;
 }
 
-// создание нового массива из десяти элементов заполненного нулями
+// создание нового целочисленного массива из десяти элементов заполненного нулями
 // array = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
 int[] array = new int[10];
 

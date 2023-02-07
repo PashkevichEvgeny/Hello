@@ -1,8 +1,11 @@
-﻿int Max(int arg1, int arg2, int arg3)
+﻿// Функция возвращающая максимальное значение из трех аргументов
+int Max(int arg1, int arg2, int arg3)
 {
     int res = arg1;
+    // Сравнение значений
     if (res < arg2) res = arg2; 
     if (res < arg3) res = arg3;
+    // Возврат самого большого значения 
     return res;
 }
 
@@ -21,6 +24,8 @@ int c3 = 33;
 // int max3 = Max(a3, b3, c3);
 // int max = Max(max1, max2, max3);
 
+// Вызов функции Max для вычисления самого большого значения и 
+// сохранение результата в переменную max
 int max = Max(
     Max(a1, b1, c1), 
     Max(a2, b2, c2), 
